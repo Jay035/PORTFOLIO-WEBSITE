@@ -2,8 +2,192 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page #preloader,
+.portfolio #preloader,
+.portfolio #preloader,
+.contact #preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.home-page #preloader .wrapper,
+.portfolio #preloader .wrapper,
+.portfolio #preloader .wrapper,
+.contact #preloader .wrapper {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page #preloader .wrapper .ring,
+.portfolio #preloader .wrapper .ring,
+.portfolio #preloader .wrapper .ring,
+.contact #preloader .wrapper .ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -30px;
+  border: 4px solid transparent;
+  border-top: 4px solid #24ecff;
+  border-radius: 50%;
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.home-page #preloader .wrapper .ring::before,
+.portfolio #preloader .wrapper .ring::before,
+.portfolio #preloader .wrapper .ring::before,
+.contact #preloader .wrapper .ring::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  background: #24ecff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
+          box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
+}
+
+.home-page #preloader .wrapper .ring:nth-child(2),
+.portfolio #preloader .wrapper .ring:nth-child(2),
+.portfolio #preloader .wrapper .ring:nth-child(2),
+.contact #preloader .wrapper .ring:nth-child(2) {
+  -webkit-animation: animate2 4s linear infinite;
+          animation: animate2 4s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #93ff2d;
+}
+
+.home-page #preloader .wrapper .ring:nth-child(2)::before,
+.portfolio #preloader .wrapper .ring:nth-child(2)::before,
+.portfolio #preloader .wrapper .ring:nth-child(2)::before,
+.contact #preloader .wrapper .ring:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background: #93ff2d;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
+          box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.home-page #preloader .wrapper .ring:nth-child(3),
+.portfolio #preloader .wrapper .ring:nth-child(3),
+.portfolio #preloader .wrapper .ring:nth-child(3),
+.contact #preloader .wrapper .ring:nth-child(3) {
+  position: absolute;
+  top: -66px;
+  -webkit-animation: animate2 4s linear infinite;
+          animation: animate2 4s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #e41cf8;
+}
+
+.home-page #preloader .wrapper .ring:nth-child(3)::before,
+.portfolio #preloader .wrapper .ring:nth-child(3)::before,
+.portfolio #preloader .wrapper .ring:nth-child(3)::before,
+.contact #preloader .wrapper .ring:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background: #e41cf8;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
+          box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
+}
+
+.home-page #preloader .wrapper p,
+.portfolio #preloader .wrapper p,
+.portfolio #preloader .wrapper p,
+.contact #preloader .wrapper p {
+  position: absolute;
+  bottom: -100px;
+  color: #a5a5a8;
+  font-size: 1.5em;
+  letter-spacing: 0.11px;
+}
+
+body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Montserrat', serif;
@@ -658,7 +842,7 @@ h4 {
   font-size: 40px;
   text-align: center;
   margin: .6em auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .portfolio main h1,
@@ -992,8 +1176,8 @@ h4 {
 
 .contact .container form .success-icon,
 .contact .container form .failure-icon {
-  right: 5em;
-  margin-top: 1em;
+  right: 6em;
+  margin-top: -2.5em;
   opacity: 0;
 }
 

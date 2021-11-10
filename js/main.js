@@ -1,7 +1,23 @@
+// page loading animation 
+window.addEventListener("load", function(){
+    document.getElementById('preloader').style.display = 'none';
+});
+
 const hamburger = document.querySelector('#hamburger');
 const inputField = document.querySelectorAll('input');
 const submitButton = document.getElementById('send');
 const textArea = document.querySelectorAll('.text');
+const homeLink = document.getElementById('home');
+const aboutLinkOne = document.getElementById('about-mobile');
+const aboutLinkTwo = document.getElementById('about-desktop');
+
+function myFunction(){
+    homeLink.removeAttribute('aria-current');
+    aboutLinkOne.setAttribute('aria-current', 'page')
+    aboutLinkTwo.setAttribute('aria-current', 'page')
+    // aboutLink.setAttribute('aria-current', 'page')
+}
+    
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -33,19 +49,15 @@ let firstName = id('firstName'),
 
 
 // clear value after submit button is clicked
-    submitButton.addEventListener('click', (e) =>{
-        let engine = (id, serial, message) => {
-            id.value.trim() === ''
-            ? (errorMsg[serial].innerHTML = message, errorMsg[serial].style.marginBottom = '0.2em', id.style.borderBottom = '2px solid red', failureIcon[serial].style.opacity = '1', successIcon[serial].style.opacity = '0', e.returnValue = false)
-            : (errorMsg[serial].innerHTML = '', id.style.borderBottom = '2px solid green', failureIcon[serial].style.opacity = '0', successIcon[serial].style.opacity = '1', e.returnValue = true)
-        };
-        engine(firstName, 0, 'First name can\'t be blank');
-        engine(lastName, 1, 'Last name can\'t be blank');
-        engine(email, 2, 'Email can\'t be blank');
-        engine(textarea, 3, 'message can\'t be blank');
-        
-
-        
-
-        // text.value = '';
-    });
+submitButton.addEventListener('click', (e) =>{
+    let engine = (id, serial, message) => {
+        id.value.trim() === ''
+        ? (errorMsg[serial].innerHTML = message, errorMsg[serial].style.marginBottom = '0.2em', id.style.borderBottom = '2px solid red', failureIcon[serial].style.opacity = '1', successIcon[serial].style.opacity = '0', e.returnValue = false)
+        : (errorMsg[serial].innerHTML = '', id.style.borderBottom = '2px solid green', failureIcon[serial].style.opacity = '0', successIcon[serial].style.opacity = '1', e.returnValue = true)
+    };
+    engine(firstName, 0, 'First name can\'t be blank');
+    engine(lastName, 1, 'Last name can\'t be blank');
+    engine(email, 2, 'Email can\'t be blank');
+    engine(textarea, 3, 'message can\'t be blank');
+    
+});
