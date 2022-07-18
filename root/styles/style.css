@@ -90,16 +90,8 @@ html {
   height: 15px;
   background: #24ecff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px #24ecff33,
- 0 0 0 10px #24ecff22,
- 0 0 0 20px #24ecff11,
- 0 0 20px #24ecff,
- 0 0 50px #24ecff;
-          box-shadow: 0 0 0 5px #24ecff33,
- 0 0 0 10px #24ecff22,
- 0 0 0 20px #24ecff11,
- 0 0 20px #24ecff,
- 0 0 50px #24ecff;
+  -webkit-box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
+          box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
 }
 
 .home-page #preloader .wrapper .ring:nth-child(2),
@@ -127,16 +119,8 @@ html {
   height: 15px;
   background: #93ff2d;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px #93ff2d33,
- 0 0 0 10px #93ff2d22,
- 0 0 0 20px #93ff2d11,
- 0 0 20px #93ff2d,
- 0 0 50px #93ff2d;
-          box-shadow: 0 0 0 5px #93ff2d33,
- 0 0 0 10px #93ff2d22,
- 0 0 0 20px #93ff2d11,
- 0 0 20px #93ff2d,
- 0 0 50px #93ff2d;
+  -webkit-box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
+          box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
 }
 
 @-webkit-keyframes animate2 {
@@ -188,14 +172,8 @@ html {
   height: 15px;
   background: #e41cf8;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px #e41cf833,
- 0 0 0 10px #e41cf811,
- 0 0 20px #e41cf8,
- 0 0 50px #e41cf8;
-          box-shadow: 0 0 0 5px #e41cf833,
- 0 0 0 10px #e41cf811,
- 0 0 20px #e41cf8,
- 0 0 50px #e41cf8;
+  -webkit-box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
+          box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
 }
 
 .home-page #preloader .wrapper p,
